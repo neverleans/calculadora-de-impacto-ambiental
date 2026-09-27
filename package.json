@@ -1,0 +1,30 @@
+{
+  "name": "carbonlens-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CarbonLens — Open Carbon Accounting & ESG Engine (GHG Protocol Scopes 1, 2, 3)",
+  "workspaces": [
+    "packages/core",
+    "packages/web"
+  ],
+  "scripts": {
+    "dev": "npm --workspace=@carbonlens/web run dev",
+    "build": "npm --workspace=@carbonlens/core run build && npm --workspace=@carbonlens/web run build",
+    "test": "npm --workspace=@carbonlens/core run test",
+    "test:watch": "npm --workspace=@carbonlens/core run test:watch",
+    "test:coverage": "npm --workspace=@carbonlens/core run test:coverage",
+    "typecheck": "npm --workspaces run typecheck"
+  },
+  "keywords": [
+    "carbon-accounting",
+    "ghg-protocol",
+    "esg",
+    "climate-tech",
+    "carbon-footprint",
+    "sustainability",
+    "carbon-credits",
+    "typescript"
+  ],
+  "author": "Lucas <https://github.com/neverleans>",
+  "license": "MIT"
+}
