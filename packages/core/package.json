@@ -1,0 +1,43 @@
+{
+  "name": "@carbonlens/core",
+  "version": "1.0.0",
+  "description": "Pure TypeScript scientific engine for GHG Protocol Scopes 1, 2, 3 carbon accounting and ESG simulation",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "carbon-accounting",
+    "ghg-protocol",
+    "scope-1",
+    "scope-2",
+    "scope-3",
+    "climate-tech",
+    "esg",
+    "mcti",
+    "defra",
+    "ipcc"
+  ],
+  "author": "Lucas <https://github.com/neverleans>",
+  "license": "MIT",
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.2",
+    "vitest": "^2.1.1"
+  }
+}
